@@ -6,7 +6,7 @@
 //! ***************************************************************************
 //! ***************************************************************************
 
-//Todo =============================================================
+//Todo ======================================================================================
 console.log("Hello");
 //? output--> Hello
 //todo console.log("varName on line number 5", varName);
@@ -17,23 +17,23 @@ console.log("varName on line number 5", varName);
 varName = 10;
 varName = 20;
 console.log("varName on line number 8", varName);
-//! output 20 [ let can be reassign with a new value. ]
+//! output 20 [ Let can be reassign with a new value. ]
 
-//Todo =============================================================
+//Todo ======================================================================================
 let fruitnameA = "apple";
 console.log(fruitnameA);
 //? output apple
 {
   let fruitnameA;
   console.log(fruitnameA);
-  //! output undefined [because let is block scope]
+  //! output undefined [ Because let is block scope ]
   fruitnameA = "orange";
   console.log(fruitnameA);
   //? output orange [ let can be reassign with a new value. ]
 }
 console.log(fruitnameA);
 
-//Todo =============================================================
+//Todo ======================================================================================
 var fruitnameB = "apple";
 console.log(fruitnameB);
 {
@@ -41,16 +41,16 @@ console.log(fruitnameB);
   //? output--> error [  Due to TDZ ]
   let fruitnameB = "orange";
   console.log(fruitnameB);
-  //! output orange [here we do Legal variable shadowing first varibale declared with var and then varibale redeclared with let]
+  //! output orange [ Here we do Legal variable shadowing first varibale declared with var and then varibale redeclared with let ]
 }
 console.log(fruitnameB);
 
-//Todo =============================================================
+//Todo ======================================================================================
 //* let fruitnameC = "apple";
 //* console.log(fruitnameC);
 //* console.log(fruits)
 //* {
-//!  var fruitnameC = "orange"; [here we do Illegal variable shadowing ]
+//!  var fruitnameC = "orange"; [ Here we do Illegal variable shadowing ]
 //*   console.log(fruitnameC);
 //* }
 //* console.log(fruitnameC);
@@ -77,6 +77,6 @@ console.log(fruitnameB);
 //* ===================================================================================
 //* =======  var      ==  Fuction, Global  ==  True      ==  True      ==  False  =====
 //* =======  let      ==  Fuction, Block   ==  True      ==  False     ==  True   =====
-//* =======  const    ==  Fuction, Block   ==  False     ==  False     ==  True  =====
+//* =======  const    ==  Fuction, Block   ==  False     ==  False     ==  True   =====
 //* ===================================================================================
 //* ===================================================================================
