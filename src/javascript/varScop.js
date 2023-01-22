@@ -9,7 +9,7 @@
 //Todo =============================================================
 // eslint-disable-next-line no-unused-vars
 var num = 10;
-function funtionA() {
+function funtionA() {  
   var num = 20;
   console.log("line number 15", num);
   //! output--> 20 [ because var is funtion scop veriable]
